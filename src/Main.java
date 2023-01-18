@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         int balance = 100;
-        int replenishment = 1100;
+        int replenishment = 2000;
 
         int bonus;
 
@@ -13,11 +13,8 @@ public class Main {
         }
         System.out.println("Ваши бонусы составляют: " + bonus + " рублей");
 
-        if (replenishment > 1000) {
-            balance = replenishment + balance + bonus;
-        } else {
-            balance = (balance + replenishment);
-        }
+        balance = replenishment + balance + bonus;
+
         System.out.println("Ваш баланс составляет: " + balance + " рублей");
     }
 }
